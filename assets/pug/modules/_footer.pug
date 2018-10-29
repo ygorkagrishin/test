@@ -1,0 +1,34 @@
+.footer
+  .container
+    .footer-inf.inf
+      h5.footer-title.
+        Контакты:
+      ul
+        li.
+          <span>Телефон:</span> +7 (812) 123-45-67
+        li.
+          <span>E-mail:</span> mail@site.ru
+        li.
+          <span>Skype:</span> skype_for_example
+        li.
+          <span>Адрес:</span> 123456, г. Москва, 
+          ул. Строителей, д. 3, кв. 12
+
+    .footer-connect
+      h6.footer-title.
+        Напишите нам:
+      
+      form(action="action.php", method="get").form#form
+        .form-rows
+          .form-row
+            .form-col.form-col-size-lg
+                label(for="form-email").visually-hidden Почта
+                input(type="text", name="email", placeholder="E-mail")#form-email
+          .form-row
+            .form-col.form-col-size-lg
+                label(for="form-message").visually-hidden Сообщение
+                textarea(name="message", rows="3", placeholder="Введите ваше сообщение...")#form-message
+        .form-btn-container.clearfix
+          button(type="submit").btn-primary.form-btn-submit.
+            Отправить
+        

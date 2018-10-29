@@ -1,0 +1,38 @@
+.form {
+  padding: 10px;
+  background-color: $greyColor;
+}
+
+.form-rows {
+  margin-bottom: 10px;
+}
+
+.form-row {
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.form-col {
+  input, textarea {
+    display: inline-block;
+    width: 100%;
+
+    background-color: $whiteColor;
+  }
+  
+  input {
+    padding: 16px 11px;
+  }
+
+  textarea {
+    padding: 10px 11px;
+  }
+}
+
+.form-btn-submit {
+  float: right;
+  padding: 14px 56px;
+
+  font-size: 18px;
+}

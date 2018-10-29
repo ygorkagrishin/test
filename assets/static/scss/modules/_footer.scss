@@ -1,0 +1,29 @@
+.footer {
+  padding: 26px 0 34px 0;
+  .container {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 900px) {
+      flex-wrap: wrap;
+    }
+  }
+}
+
+.footer-title {
+  margin-bottom: 16px;
+  color: $yellowColor;
+}
+
+.footer-inf {
+  @media (max-width: 900px) {
+    margin-bottom: 40px;
+  }
+}
+
+.footer-connect {
+  flex-basis: 775px;
+  @media (max-width: 900px) {
+    flex-basis: 100%;
+  }
+}

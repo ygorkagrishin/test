@@ -1,0 +1,14 @@
+.btn-primary {
+  display: inline-block;
+  padding: 5px 9px;
+  
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $whiteColor;
+  
+  background-image: linear-gradient($redColor 30%, $darkRedColor);
+
+  &:hover {
+    background-image: linear-gradient($darkRedColor 30%, $redColor);
+  }
+}

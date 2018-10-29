@@ -1,0 +1,11 @@
+.header {
+  padding: 68px 0;
+
+  .container {
+    display: flex;
+    align-items: center;
+    @media (max-width: 425px) {
+      flex-wrap: wrap;
+    }
+  }
+}

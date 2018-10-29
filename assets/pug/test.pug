@@ -1,0 +1,92 @@
+extends templates/temp
+
+block title 
+  title Тестовое задание
+
+block content
+  
+  .main
+    main
+      section
+        .news.sect
+          .container
+            h2.news-title.sect-title.
+              Новости
+            .news-row
+
+                .news-col
+                  .article
+                    .helper  
+                      .article-pic-wrap
+                        img(src="img/content/news/Depositphotos_56468969_original.png", alt="news pic")
+                      .article-cont
+                        h3.article-name Case study: HUGE
+                        .article-cont-text
+                          p.
+                            So to kick off 2014, we continued to apply this principle to the evolution of our own brand, 
+                            introducing a refined design system along with a new logo and a reengineered site.
+                            Over the course of the last 15 years, we have grown so much and worked hard to apply the 
+                    .article-btn-container
+                      a(href="#").btn-primary Читать дальше
+
+                .news-col
+                  .article
+                    .helper
+                      .article-pic-wrap
+                        img(src="img/content/news/Depositphotos_56468969_original.png", alt="news pic")
+                      .article-cont
+                        h3.article-name UncleGrey and Media...
+                        .article-cont-text
+                          p.
+                            Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+                            totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, 
+                            explicabo.
+                    .article-btn-container
+                      a(href="#").btn-primary Читать дальше
+
+                .news-col
+                  .article
+                    .helper
+                      .article-pic-wrap
+                        img(src="img/content/news/Depositphotos_56468969_original.png", alt="news pic")
+                      .article-cont
+                        h3.article-name Top Digital Agencies ...
+                        .article-cont-text
+                          p.
+                            California is one of the most culturally, imaginatively, 
+                            and technologically diverse regions of our planet.
+                            There, the last few decades have witnessed an amazing socio-cultural experiment that 
+                            has gone hand-in-hand with the greatest technological and  
+                    .article-btn-container
+                      a(href="#").btn-primary Читать дальше
+
+                .news-col
+                  .article
+                    .helper
+                      .article-pic-wrap
+                        img(src="img/content/news/Depositphotos_56468969_original.png", alt="news pic")
+                      .article-cont
+                        h3.article-name Developing an Effecti...
+                        .article-cont-text
+                          p.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                            Duis aute irure dolor in reprehenderit in  
+                    .article-btn-container
+                      a(href="#").btn-primary Читать дальше
+                
+      section
+        .offers.sect
+          .container
+            h2.sect-title.offers-title.
+              Акции
+            .offers-row
+              -
+                const src = ['img/content/offers/offer-1.png', 'img/content/offers/offer-2.png', 'img/content/offers/offer-3.png',
+                  'img/content/offers/offer-2.png', 'img/content/offers/offer-3.png']
+
+              each val in src
+                .offers-col
+                  a(href="#").offer
+                    img(src= val, alt="offer pic")
